@@ -1,10 +1,4 @@
-/*
- * Title: Arctic Fox
- * Description: Make the Tea House theme not use silly white-on-black.
- * Author: John Leen <jleen@saturnvalley.org>
- * Updated: 14 April 2012
- * 
- */
+// Author: John Leen <jleen@saturnvalley.org>
 
 // ==UserScript==
 // @name Arctic Fox
@@ -27,9 +21,8 @@
 		head.appendChild(style);
 	}
 	
-    var cssStyle = 'td.xY { background-color: rgba(243, 243, 243, 0.85) } ' +
-                   'td.xY span { color: #222 } ' +
-                   'td.xY span.y2 { color: #777 }';
-	addGlobalStyle(cssStyle);
+	addGlobalStyle('td.xY { background-color: rgba(243, 243, 243, 0.85) }');
+    addGlobalStyle('td.xY span { color: #222 }');
+    addGlobalStyle('td.xY span.y2 { color: #777 }');
 })()
 
